@@ -1,0 +1,500 @@
+@font-face {
+  font-family: 'Monument';
+  src: url('./fonts/MonumentExtended-Ultrabold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'monument_extendedblack';
+  src: url('./fonts/monumentextended-black-webfont.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'monument_extendedbold';
+  src: url('./fonts/monumentextended-bold-webfont.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'monument-regular';
+  src: url('./fonts/monumentextended-regular-webfont.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'monument_extendedultralight';
+  src: url('./fonts/monumentextended-ultralight-webfont.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+:root{
+  --grey :#a5a5a5;
+  --dark : #181825;
+  --whithy : #f0f0f0;
+  --grethy : #cccaca;
+  --primary : #430097;
+  --secondary : #00f16f;
+  --electric : #6cf5ff;
+}
+
+*, ::before, ::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+    font-family: 'Monument';
+    font-weight: 400;
+ 
+  
+}
+
+/*  NAVBAR */
+.logo {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Monument';
+  font-weight: 900;
+  font-size: 12vw;
+}
+.logo a {
+  position: absolute;
+  display: flex;
+  top: 20px;
+  left: 50%;
+  transform: translate(-50%);
+  color:  #6cf5ff;
+ 
+}
+
+.puls-circle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #00f16f;
+  border-radius: 50%;
+  top: 10px;
+  left: 110%;
+  box-shadow: 0 0 0 0#00f16f;
+  animation: pulse 1.3s infinite;
+}
+@keyframes pulse {
+  to {
+    box-shadow: 0 0 0 15px rgba(0, 241, 112, 0.01);
+  }
+}
+
+.navigation ul {
+  position: fixed;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.navigation li {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  top: -80vh;
+  right: -92vw;
+}
+
+.navigation li a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  height: 4vw;
+  width: 10vw;
+}
+.navigation span {
+  position: absolute;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.navigation .icon {
+  color: var(--grey);
+  padding: 8px;
+  font-size: 1.3vw;
+  transition: all 0.3s ease-in-out;
+}
+
+.navigation span:hover {
+  background-color: #00f16f;
+  color: #430097;
+  border-radius: 50%;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  transform: scale(1.1);
+  opacity: 0.9;
+}
+
+
+
+
+/*  CONTAINER  */
+
+.container {
+  position: relative;
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+.container::-webkit-scrollbar {
+  display: none;
+}
+
+.main-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: none;
+  height: 100vh;
+  width: 100vw;
+  scroll-snap-align: center;
+  background-color: var(--whithy);
+}
+.main-content p {
+  font-family: 'monument_extendedultralight';
+}
+
+/*#home {
+   background: linear-gradient(#130022, #50009bfb);
+}*/
+
+#home  {
+  background-color: #430097;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 5;
+}
+
+#about h1 {
+  position: absolute;
+  display: flex;
+  white-space: nowrap;
+  left: 50%;
+  transform: translate(-50%);
+  top: 57px;
+  color: var(--primary);
+}
+#portfolio h1 {
+  position: absolute;
+  display: flex;
+  white-space: nowrap;
+  left: 50%;
+  transform: translate(-50%);
+  top: 58px;
+  color: var(--primary);
+
+}
+#services h1 {
+  position: absolute;
+  display: flex;
+  white-space: nowrap;
+  left: 50%;
+  transform: translate(-50%);
+  top: 58px;
+  color: var(--primary);
+
+}
+#blog h1 {
+  position: absolute;
+  display: flex;
+  white-space: nowrap;
+  left: 50%;
+  transform: translate(-50%);
+  top: 58px;
+  color: var(--primary);
+
+}
+#contact h1 {
+  position: absolute;
+  display: flex;
+  white-space: nowrap;
+  left: 50%;
+  transform: translate(-50%);
+  top: 58px;
+  color: var(--primary);
+
+}
+
+
+
+/*=====================footer=====================*/
+
+.main-footer {
+  
+  z-index: 10;
+}
+
+.footer {
+  background-color: var(--primary);
+  color: #ffffff;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1vw;
+  overflow: hidden;
+  font-family: 'Monument';
+}
+
+.footer-text {
+  margin-right: 20px;
+}
+
+.footer-text p {
+  font-size: 0.8rem;
+  position: relative;
+  margin: 0;
+  bottom: -350px;
+  letter-spacing: 0.4rem;
+  font-family: 'monument_extendedultralight';
+}
+
+.social-icons {
+  position: fixed;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: 10px;
+  z-index: 70;
+}
+
+.social-icons li {
+  margin: 10px;
+}
+
+
+.social-icons a {
+  color: var(--whithy);
+  transition: all 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  transition: transform 0.2s;
+}
+
+.social-icons a:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5);
+  }
+
+.social-icons li {
+  font-size: 16px;
+}
+
+.animation {
+  font-size: 250%;
+  font-weight: bolder;
+}
+
+#text-container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  top: 320px;
+}
+
+#big-text:hover {
+  cursor: pointer;
+}
+
+#text {
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+  font-family: 'Monument';
+  color: #00f16f;
+}
+
+#big-text {
+  font-family: 'Monument';
+  font-size: 85px;
+  color: rgba(86,85,212,255);
+}
+
+
+
+/* styles pour les écrans larges */
+@media only screen and (max-width: 960px) {
+  /* mettre le contenu de la navigation en ligne */
+  .nav-list {
+    display: flex;
+    left: -40px;
+    height: 40rem;
+
+  }
+  .list .icon {
+    font-size: 1.4rem;
+  }
+  .navigation ul li a {
+    padding: 35px;
+  }
+  .logo {
+    font-size: 4rem;
+  }
+  .header-social ul {
+    left: 50px;
+  }
+
+
+  /* ajuster la taille du texte de titre principal */
+  #big-text {
+    font-size: 70px;
+  }
+  
+  /* cacher le texte de titre secondaire */
+  .secondTitle {
+    display: none;
+  }
+  
+  /* régler la largeur des sections principales */
+  .container {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100vh;
+  }
+  .footer-text p {
+    font-size: 1.5rem;
+  }
+}
+
+/* styles pour les écrans larges */
+@media only screen and (max-width: 391px) {
+
+  .logo {
+    font-size: 38px;
+    position: absolute;
+    display: flex;
+    top: 10px;
+    left: 85px;
+
+  }
+  .social-icons  {
+    position: fixed;
+    display: flex;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(25%);
+  }
+
+  #text-container {
+    padding: 10px;
+    top: 550px;
+  }
+  #big-text {
+    font-size: 18px;
+  }
+  #text {
+    position: inherit;
+    top: 50px;
+    font-size: 20px;
+    white-space: nowrap;
+  }
+  p {
+    width: 70%;
+    font-size: 24px;
+    font-family: 'monument_extendedultralight';
+    color: var(--dark);
+    display: flex;
+    text-align: center;
+    letter-spacing: 0.15rem;
+  }
+
+  .navigation ul {
+    position: fixed;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 2.2rem;
+    width: 370px;
+    bottom: -300px;
+    flex-direction: column;
+    left: -180px;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+  }
+  .navigation li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+  }
+  
+  .list .icon {
+    font-size: 1.2rem;
+  }
+  .navigation ul li a {
+    padding: 24.5px;
+  }
+  .navigation .icon {
+    padding: 6px;
+  }
+  #copyright {
+    position: relative;
+    width: 100%;
+    font-size: 0.6rem;
+    letter-spacing: normal;
+    bottom: -320px;
+    display: flex;
+    left: 2.5%;
+    white-space: nowrap;
+    font-family: 'monument_extendedultralight';
+    color: var(--white);
+    letter-spacing: 0.10rem;
+
+  }
+  
+}
+
