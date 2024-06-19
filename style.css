@@ -34,14 +34,15 @@
   font-style: normal;
   font-display: swap;
 }
-:root{
-  --grey :#a5a5a5;
-  --dark : #181825;
-  --whithy : #f0f0f0;
-  --grethy : #cccaca;
-  --primary : #430097;
-  --secondary : #00f16f;
-  --electric : #6cf5ff;
+
+:root {
+  --grey: #a5a5a5;
+  --dark: #181825;
+  --whithy: #f0f0f0;
+  --grethy: #cccaca;
+  --primary: #430097;
+  --secondary: #00f16f;
+  --electric: #6cf5ff;
 }
 
 *, ::before, ::after {
@@ -53,12 +54,17 @@
 }
 
 body {
-    font-family: 'Monument';
-    font-weight: 400;
- 
+  font-family: 'Monument';
+  font-weight: 400;
+  background-color: var(--whithy);
+  color: var(--dark);
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
-/*  NAVBAR */
+/* NAVBAR */
 .logo {
   position: relative;
   display: flex;
@@ -66,29 +72,26 @@ body {
   align-items: center;
   font-family: 'Monument';
   font-weight: 900;
-  font-size: 12vw;
+  font-size: 3rem;
+  color: var(--electric);
 }
+
 .logo a {
-  position: absolute;
-  display: flex;
-  top: 20px;
-  left: 50%;
-  transform: translate(-50%);
-  color:  #6cf5ff;
- 
+  color: var(--electric);
 }
 
 .puls-circle {
   position: absolute;
   width: 20px;
   height: 20px;
-  background: #00f16f;
+  background: var(--secondary);
   border-radius: 50%;
   top: 10px;
   left: 110%;
-  box-shadow: 0 0 0 0#00f16f;
+  box-shadow: 0 0 0 0 var(--secondary);
   animation: pulse 1.3s infinite;
 }
+
 @keyframes pulse {
   to {
     box-shadow: 0 0 0 15px rgba(0, 241, 112, 0.01);
@@ -123,7 +126,9 @@ body {
   text-decoration: none;
   height: 4vw;
   width: 10vw;
+  transition: background-color 0.3s ease-in-out;
 }
+
 .navigation span {
   position: absolute;
   display: flex;
@@ -131,7 +136,6 @@ body {
   margin: 0;
   justify-content: center;
   align-items: center;
-  
 }
 
 .navigation .icon {
@@ -142,17 +146,15 @@ body {
 }
 
 .navigation span:hover {
-  background-color: #00f16f;
-  color: #430097;
+  background-color: var(--secondary);
+  color: var(--primary);
   border-radius: 50%;
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
   transform: scale(1.1);
   opacity: 0.9;
 }
 
-
-/*  CONTAINER  */
-
+/* CONTAINER */
 .container {
   position: relative;
   height: 100vh;
@@ -160,6 +162,7 @@ body {
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
 }
+
 .container::-webkit-scrollbar {
   display: none;
 }
@@ -176,16 +179,14 @@ body {
   scroll-snap-align: center;
   background-color: var(--whithy);
 }
+
 .main-content p {
   font-family: 'monument_extendedultralight';
 }
 
-/*#home {
-   background: linear-gradient(#130022, #50009bfb);
-}*/
-
-#home  {
-  background-color: #430097;
+/* HOME SECTION */
+#home {
+  background-color: var(--primary);
   position: relative;
   width: 100vw;
   height: 100vh;
@@ -196,16 +197,8 @@ body {
   z-index: 5;
 }
 
-#about h1 {
-  position: absolute;
-  display: flex;
-  white-space: nowrap;
-  left: 50%;
-  transform: translate(-50%);
-  top: 57px;
-  color: var(--primary);
-}
-#portfolio h1 {
+/* SECTION HEADINGS */
+#about h1, #portfolio h1, #services h1, #blog h1, #contact h1 {
   position: absolute;
   display: flex;
   white-space: nowrap;
@@ -213,45 +206,10 @@ body {
   transform: translate(-50%);
   top: 58px;
   color: var(--primary);
-
-}
-#services h1 {
-  position: absolute;
-  display: flex;
-  white-space: nowrap;
-  left: 50%;
-  transform: translate(-50%);
-  top: 58px;
-  color: var(--primary);
-
-}
-#blog h1 {
-  position: absolute;
-  display: flex;
-  white-space: nowrap;
-  left: 50%;
-  transform: translate(-50%);
-  top: 58px;
-  color: var(--primary);
-
-}
-#contact h1 {
-  position: absolute;
-  display: flex;
-  white-space: nowrap;
-  left: 50%;
-  transform: translate(-50%);
-  top: 58px;
-  color: var(--primary);
-
 }
 
-
-
-/*=====================footer=====================*/
-
+/* FOOTER */
 .main-footer {
-  
   z-index: 10;
 }
 
@@ -281,6 +239,7 @@ body {
   font-family: 'monument_extendedultralight';
 }
 
+/* SOCIAL ICONS */
 .social-icons {
   position: fixed;
   list-style-type: none;
@@ -299,7 +258,6 @@ body {
   margin: 10px;
 }
 
-
 .social-icons a {
   color: var(--whithy);
   transition: all 0.3s ease;
@@ -313,18 +271,11 @@ body {
 }
 
 .social-icons a:hover {
-  -ms-transform: scale(1.5); /* IE 9 */
-  -webkit-transform: scale(1.5); /* Safari 3-8 */
   transform: scale(1.5);
-  }
+}
 
 .social-icons li {
   font-size: 16px;
-}
-
-.animation {
-  font-size: 250%;
-  font-weight: bolder;
 }
 
 #text-container {
@@ -346,79 +297,65 @@ body {
   font-weight: bold;
   text-align: center;
   font-family: 'Monument';
-  color: #00f16f;
+  color: var(--secondary);
 }
 
 #big-text {
   font-family: 'Monument';
   font-size: 85px;
-  color: rgba(86,85,212,255);
+  color: rgba(86, 85, 212, 255);
 }
 
-
-
-/* styles pour les écrans larges */
+/* RESPONSIVE DESIGN */
 @media only screen and (max-width: 960px) {
-  /* mettre le contenu de la navigation en ligne */
-  .nav-list {
-    display: flex;
-    left: -40px;
-    height: 40rem;
-
-  }
-  .list .icon {
-    font-size: 1.4rem;
-  }
-  .navigation ul li a {
-    padding: 35px;
-  }
   .logo {
     font-size: 4rem;
   }
+  
+  .nav-list {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 10px;
+    top: 50px;
+  }
+  
+  .list .icon {
+    font-size: 1.4rem;
+  }
+
+  .navigation ul li a {
+    padding: 35px;
+  }
+
   .header-social ul {
     left: 50px;
   }
 
-
-  /* ajuster la taille du texte de titre principal */
   #big-text {
     font-size: 70px;
   }
-  
-  /* cacher le texte de titre secondaire */
-  .secondTitle {
-    display: none;
-  }
-  
-  /* régler la largeur des sections principales */
+
   .container {
-    position: relative;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
     width: 100%;
     height: 100vh;
   }
+
   .footer-text p {
     font-size: 1.5rem;
   }
 }
 
-/* styles pour les écrans larges */
 @media only screen and (max-width: 391px) {
-
   .logo {
     font-size: 38px;
     position: absolute;
-    display: flex;
     top: 10px;
     left: 85px;
-
   }
-  .social-icons  {
+
+  .social-icons {
     position: fixed;
-    display: flex;
     bottom: 20px;
     left: 50%;
     transform: translate(25%);
@@ -428,15 +365,18 @@ body {
     padding: 10px;
     top: 550px;
   }
+
   #big-text {
     font-size: 18px;
   }
+
   #text {
     position: inherit;
-    top: 50px;
+    top: 50px
     font-size: 20px;
     white-space: nowrap;
   }
+
   p {
     width: 70%;
     font-size: 24px;
@@ -445,6 +385,7 @@ body {
     display: flex;
     text-align: center;
     letter-spacing: 0.15rem;
+    margin: 10px auto;
   }
 
   .navigation ul {
@@ -453,45 +394,38 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-    height: 2.2rem;
-    width: 370px;
-    bottom: -300px;
-    flex-direction: column;
-    left: -180px;
-    align-items: center;
-    justify-content: center;
+    flex-direction: row;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    justify-content: space-around;
+    background: var(--primary);
     z-index: 2;
   }
-  .navigation li a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
+
+  .navigation li {
+    position: relative;
+    top: 0;
+    right: 0;
   }
-  
+
+  .navigation li a {
+    height: auto;
+    width: auto;
+    padding: 20px;
+  }
+
   .list .icon {
     font-size: 1.2rem;
   }
-  .navigation ul li a {
-    padding: 24.5px;
-  }
-  .navigation .icon {
-    padding: 6px;
-  }
-  #copyright {
-    position: relative;
-    width: 100%;
+
+  .footer-text p {
     font-size: 0.6rem;
     letter-spacing: normal;
-    bottom: -320px;
-    display: flex;
-    left: 2.5%;
-    white-space: nowrap;
+    bottom: 10px;
+    text-align: center;
+    width: 100%;
     font-family: 'monument_extendedultralight';
-    color: var(--white);
-    letter-spacing: 0.10rem;
-
   }
-  
 }
 
