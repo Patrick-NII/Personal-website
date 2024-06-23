@@ -1,112 +1,74 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Patrick NII - Data Scientist & Engineer</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Urbanist:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <div class="container">
-    <div class="nav-menu">
+  <header class="hero">
+    <nav class="navbar">
       <div class="logo"><a href="#home">Patrick NII</a></div>
-      <div class="header-social">
-        <ul class="social-icons">
-          <li><a href="https://twitter.com/Patrick__Ngunga" target="_blank"><i class="fab fa-twitter"></i></a></li>
-          <li><a href="https://github.com/Patrick-NII" target="_blank"><i class="fab fa-github"></i></a></li>
-          <li><a href="https://instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a></li>
-          <li><a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-        </ul>
-      </div>
-      <nav class="nav" id="nav">
-        <ul class="nav-list">
-          <li class="list"><a href="#home"><span class="title active">Home</span><span class="uil uil-estate icon"></span></a></li>
-          <li class="list"><a href="#about"><span class="title">About</span><span class="uil uil-user icon"></span></a></li>
-          <li class="list"><a href="#portfolio"><span class="title">Portfolio</span><span class="uil uil-image icon"></span></a></li>
-          <li class="list"><a href="#services"><span class="title">Services</span><span class="uil uil-briefcase-alt icon"></span></a></li>
-          <li class="list"><a href="#blog"><span class="title">Blog</span><span class="uil uil-blogger-alt icon"></span></a></li>
-          <li class="list"><a href="#contact"><span class="title">Contact</span><span class="uil uil-comment-alt-edit icon"></span></a></li>
-          <li class="list"><a href="#credits"><span class="title">Credits</span><span class="uil uil-compress-point icon"></span></a></li>
-        </ul>
-      </nav>
+      <ul class="nav-list">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="hero-content">
+      <h1>Hi, I'm Patrick NII</h1>
+      <p>A Data Scientist & Engineer</p>
+      <a href="#projects" class="cta">See My Work</a>
     </div>
+  </header>
 
-    <section class="main-content home-main" id="home">
-      <div class="intro">
-        <h1>Welcome to My Portfolio</h1>
-        <p>Hi, I'm Patrick NII. I'm passionate about Data Science, Machine Learning, and AI.</p>
-        <div class="scroll-down"></div>
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <div class="profile">
+      <img src="profile.jpg" alt="Patrick NII">
+      <p>I'm passionate about Data Science, Machine Learning, and AI. Currently mastering advanced Big Data techniques.</p>
+    </div>
+  </section>
+
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+    <div class="project-list">
+      <!-- Project items -->
+      <div class="project-item">
+        <h3>Project Title</h3>
+        <p>Brief description of the project.</p>
+        <a href="https://github.com/Patrick-NII/project-link" target="_blank">View on GitHub</a>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="main-content" id="about">
-      <h1>ABOUT ME</h1>
-      <p>Hey there! I'm Patrick, diving into the world of Data, Machine Learning, NLP, and AI. Currently mastering advanced Big Data techniques.</p>
-    </section>
-
-    <section class="main-content" id="portfolio">
-      <h1>PORTFOLIO</h1>
-      <p>Here are some of my recent projects:</p>
-      <div class="portfolio-items">
-        <!-- Example project -->
-        <div class="portfolio-item">
-          <h2>Project Title</h2>
-          <p>Brief description of the project.</p>
-          <a href="https://github.com/Patrick-NII/project-link" target="_blank">View on GitHub</a>
-        </div>
-        <!-- Add more projects as needed -->
+  <section id="blog" class="blog">
+    <h2>Blog</h2>
+    <div class="blog-posts">
+      <!-- Blog post items -->
+      <div class="blog-post">
+        <h3>Blog Post Title</h3>
+        <p>Brief description of the blog post.</p>
+        <a href="blog-post-link" target="_blank">Read More</a>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="main-content" id="services">
-      <h1>SERVICES</h1>
-      <p>I offer the following services:</p>
-      <ul>
-        <li>Data Analysis and Visualization</li>
-        <li>Machine Learning Model Development</li>
-        <li>IoT Solutions and Automation</li>
-        <li>Data Engineering and Big Data Solutions</li>
-      </ul>
-    </section>
-
-    <section class="main-content" id="blog">
-      <h1>BLOG</h1>
-      <p>Welcome to my blog! Here, I share insights on data science, machine learning, IoT, and more.</p>
-      <div class="blog-posts">
-        <!-- Example blog post -->
-        <div class="blog-post">
-          <h2>Blog Post Title</h2>
-          <p>Brief description of the blog post.</p>
-          <a href="blog-post-link" target="_blank">Read More</a>
-        </div>
-        <!-- Add more blog posts as needed -->
-      </div>
-    </section>
-
-    <section class="main-content" id="contact">
-      <h1>CONTACT</h1>
-      <p>Feel free to reach out for inquiries or collaboration opportunities:</p>
-      <ul>
-        <li>Email: <a href="mailto:Patrick@niip.me">Patrick@niip.me</a></li>
-        <li>LinkedIn: <a href="https://www.linkedin.com/" target="_blank">LinkedIn Profile</a></li>
-        <li>Twitter: <a href="https://twitter.com/Patrick__Ngunga" target="_blank">@Patrick__Ngunga</a></li>
-      </ul>
-    </section>
-
-    <footer class="main-footer">
-      <div class="footer-text" id="credits">
-        <p>&copy; 2024 Patrick NII. All Rights Reserved.</p>
-      </div>
-    </footer>
-  </div>
-  <script src="main.js"></script>
+  <footer id="contact" class="footer">
+    <h2>Contact</h2>
+    <p>Feel free to reach out for inquiries or collaboration opportunities:</p>
+    <ul>
+      <li>Email: <a href="mailto:Patrick@niip.me">Patrick@niip.me</a></li>
+      <li>LinkedIn: <a href="https://www.linkedin.com/" target="_blank">LinkedIn Profile</a></li>
+      <li>Twitter: <a href="https://twitter.com/Patrick__Ngunga" target="_blank">@Patrick__Ngunga</a></li>
+    </ul>
+    <p>&copy; 2024 Patrick NII. All Rights Reserved.</p>
+  </footer>
 </body>
 
 </html>
