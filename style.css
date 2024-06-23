@@ -45,8 +45,9 @@ body::-webkit-scrollbar {
 
 ::-webkit-scrollbar {
   display: none;
+  -ms-overlow-style: none;
+  scrollbar-width: none;
 }
-
 .v-slider-bloc:nth-child(odd) {
   background-color: var(--primary-color);
   color: var(--light-color);
@@ -68,6 +69,20 @@ h1 {
 .hero-content p,
 .cta {
   animation: fadeIn 2s ease-in-out;
+}
+
+.cta {
+  background-color: #00f16f;
+  text-decoration: none;
+  font-size: large;
+  font-weight: bold;
+  padding: 1rem;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  
 }
 
 .profile img {
@@ -128,12 +143,6 @@ h1 {
   text-decoration: underline;
 }
 
-.custom-cursor {
-  transition: transform 0.1s ease-out;
-  z-index: 10000;
-  mix-blend-mode: difference;
-  pointer-events: none;
-}
 
 .menu-icon {
   position: fixed;
@@ -146,19 +155,19 @@ h1 {
 }
 
 .icon-light {
-  color: #f0f0f0;
+  color: var(--light-color);
 }
 
 .icon-dark {
-  color: #430097;
+  color: var(--primary-color);
 }
 
 .menu-icon-light {
-  color: #f0f0f0;
+  color: var(--light-color);
 }
 
 .menu-icon-dark {
-  color: #430097;
+  color: var(--primary-color);
 }
 
 .sidebar {
@@ -187,9 +196,12 @@ h1 {
 }
 
 .container .sidebar .nav-list a:hover {
-  color: var(--secondary-color);
+  color: var(--secondary-color) !important;
 }
 
+#home {
+  color: var(--secondary-color);
+}
 /* Animation */
 @keyframes fadeIn {
   from {
