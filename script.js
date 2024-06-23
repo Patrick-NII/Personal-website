@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const links = document.querySelectorAll('.nav-list a');
   
     menuIcon.addEventListener('click', () => {
-      sidebar.style.left = sidebar.style.left === '0px' ? '-100%' : '0';
+      sidebar.classList.toggle('active');
     });
   
     links.forEach(link => {
@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById(targetId).scrollIntoView({
           behavior: 'smooth'
         });
-        sidebar.style.left = '-100%'; // Hide sidebar after clicking a link
+        sidebar.classList.remove('active'); // Hide sidebar after clicking a link
       });
     });
   });
