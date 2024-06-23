@@ -10,18 +10,10 @@
 </head>
 
 <body>
-  <header class="hero">
-    <div class="menu-icon" id="menu-icon">
-      <i class="fas fa-bars"></i>
-    </div>
-    <div class="hero-content">
-      <h1>Hi, I'm Patrick NII</h1>
-      <p>A Data Scientist & Engineer</p>
-      <a href="#projects" class="cta">See My Work</a>
-    </div>
-  </header>
-
-  <nav class="sidebar" id="sidebar">
+  <div class="menu-icon" id="menu-icon">
+    <i class="fas fa-bars"></i>
+  </div>
+  <nav class="sidebar">
     <ul class="nav-list">
       <li><a href="#home"><i class="fas fa-home"></i></a></li>
       <li><a href="#about"><i class="fas fa-user"></i></a></li>
@@ -31,7 +23,15 @@
     </ul>
   </nav>
 
-  <section id="about" class="about">
+  <header id="home" class="hero">
+    <div class="hero-content">
+      <h1 class="fade-in">Hi, I'm Patrick NII</h1>
+      <p class="fade-in">A Data Scientist & Engineer</p>
+      <a href="#projects" class="cta fade-in">See My Work</a>
+    </div>
+  </header>
+
+  <section id="about" class="about fade-in">
     <h2>About Me</h2>
     <div class="profile">
       <img src="../Images/NII_sans_fond.jpeg" alt="Patrick NII">
@@ -39,10 +39,9 @@
     </div>
   </section>
 
-  <section id="projects" class="projects">
+  <section id="projects" class="projects fade-in">
     <h2>Projects</h2>
     <div class="project-list">
-      <!-- Project items -->
       <div class="project-item">
         <h3>Project Title</h3>
         <p>Brief description of the project.</p>
@@ -51,10 +50,9 @@
     </div>
   </section>
 
-  <section id="blog" class="blog">
+  <section id="blog" class="blog fade-in">
     <h2>Blog</h2>
     <div class="blog-posts">
-      <!-- Blog post items -->
       <div class="blog-post">
         <h3>Blog Post Title</h3>
         <p>Brief description of the blog post.</p>
@@ -63,7 +61,7 @@
     </div>
   </section>
 
-  <footer id="contact" class="footer">
+  <footer id="contact" class="footer fade-in">
     <h2>Contact</h2>
     <p>Feel free to reach out for inquiries or collaboration opportunities:</p>
     <ul>
