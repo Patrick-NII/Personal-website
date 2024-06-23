@@ -21,6 +21,13 @@ body {
   overflow-x: hidden;
 }
 
+.custom-cursor {
+  transition: transform 0.1s ease-out;
+  z-index: 10000;
+  mix-blend-mode: difference;
+  pointer-events: none;
+}
+
 .menu-icon {
   position: fixed;
   top: 1rem;
@@ -30,6 +37,23 @@ body {
   color: var(--light-color);
   z-index: 1000;
 }
+
+.icon-light {
+  color: #f0f0f0;
+}
+
+.icon-dark {
+  color: #430097;
+}
+
+.menu-icon-light {
+  color: #f0f0f0;
+}
+
+.menu-icon-dark {
+  color: #430097;
+}
+
 
 .sidebar {
   position: fixed;
