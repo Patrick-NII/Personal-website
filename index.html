@@ -1,78 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Patrick NII - Data Scientist & Engineer</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="..\style.css">
 </head>
-
 <body>
-  <div class="menu-icon" id="menu-icon">
-    <i class="fas fa-bars"></i>
+  <div class="container">
+    <div class="menu-icon" id="menu-icon">
+      <i class="fas fa-bars"></i>
+    </div>
+    <nav class="sidebar" id="sidebar">
+      <ul class="nav-list">
+        <li><a href="#home"><i class="fas fa-home"></i></a></li>
+        <li><a href="#about"><i class="fas fa-user"></i></a></li>
+        <li><a href="#projects"><i class="fas fa-project-diagram"></i></a></li>
+        <li><a href="#blog"><i class="fas fa-blog"></i></a></li>
+        <li><a href="#contact"><i class="fas fa-envelope"></i></a></li>
+      </ul>
+    </nav>
+    <div class="v-slider-bloc" id="home">
+      <div class="hero-content">
+        <h1 class="fade-in">Hi, I'm Patrick NII</h1>
+        <p class="fade-in">A Data Scientist & Engineer</p>
+        <a href="#projects" class="cta fade-in">See My Work</a>
+      </div>
+    </div>
+    <div class="v-slider-bloc" id="about">
+      <h1>About Me</h1>
+      <div class="profile">
+        <img src="../Images/NII_sans_fond.jpeg" alt="Patrick NII">
+        <p>I'm passionate about Data Science, Machine Learning, and AI. Currently mastering advanced Big Data techniques.</p>
+      </div>
+    </div>
+    <div class="v-slider-bloc" id="projects">
+      <h1>Projects</h1>
+      <div class="project-list">
+        <div class="project-item">
+          <h3>Project Title</h3>
+          <p>Brief description of the project.</p>
+          <a href="https://github.com/Patrick-NII" target="_blank">View on GitHub</a>
+        </div>
+      </div>
+    </div>
+    <div class="v-slider-bloc" id="blog">
+      <h1>Blog</h1>
+      <div class="blog-posts">
+        <div class="blog-post">
+          <h3>Blog Post Title</h3>
+          <p>Brief description of the blog post.</p>
+          <a href="blog-post-link" target="_blank">Read More</a>
+        </div>
+      </div>
+    </div>
+    <div class="v-slider-bloc" id="contact">
+      <h1>Contact</h1>
+      <p>Feel free to reach out for inquiries or collaboration opportunities:</p>
+      <ul>
+        <li>Email: <a href="mailto:Patrick@niip.me">Patrick@niip.me</a></li>
+        <li>LinkedIn: <a href="https://www.linkedin.com/" target="_blank">LinkedIn Profile</a></li>
+        <li>Twitter: <a href="https://twitter.com/Patrick__Ngunga" target="_blank">@Patrick__Ngunga</a></li>
+      </ul>
+      <p>&copy; 2024 Patrick NII. All Rights Reserved.</p>
+    </div>
   </div>
-  <nav class="sidebar">
-    <ul class="nav-list">
-      <li><a href="#home"><i class="fas fa-home"></i></a></li>
-      <li><a href="#about"><i class="fas fa-user"></i></a></li>
-      <li><a href="#projects"><i class="fas fa-project-diagram"></i></a></li>
-      <li><a href="#blog"><i class="fas fa-blog"></i></a></li>
-      <li><a href="#contact"><i class="fas fa-envelope"></i></a></li>
-    </ul>
-  </nav>
-
-  <header id="home" class="hero">
-    <div class="hero-content">
-      <h1 class="fade-in">Hi, I'm Patrick NII</h1>
-      <p class="fade-in">A Data Scientist & Engineer</p>
-      <a href="#projects" class="cta fade-in">See My Work</a>
-    </div>
-  </header>
-
-  <section id="about" class="about fade-in">
-    <h2>About Me</h2>
-    <div class="profile">
-      <img src="../Images/NII_sans_fond.jpeg" alt="Patrick NII">
-      <p>I'm passionate about Data Science, Machine Learning, and AI. Currently mastering advanced Big Data techniques.</p>
-    </div>
-  </section>
-
-  <section id="projects" class="projects fade-in">
-    <h2>Projects</h2>
-    <div class="project-list">
-      <div class="project-item">
-        <h3>Project Title</h3>
-        <p>Brief description of the project.</p>
-        <a href="https://github.com/Patrick-NII" target="_blank">View on GitHub</a>
-      </div>
-    </div>
-  </section>
-
-  <section id="blog" class="blog fade-in">
-    <h2>Blog</h2>
-    <div class="blog-posts">
-      <div class="blog-post">
-        <h3>Blog Post Title</h3>
-        <p>Brief description of the blog post.</p>
-        <a href="blog-post-link" target="_blank">Read More</a>
-      </div>
-    </div>
-  </section>
-
-  <footer id="contact" class="footer fade-in">
-    <h2>Contact</h2>
-    <p>Feel free to reach out for inquiries or collaboration opportunities:</p>
-    <ul>
-      <li>Email: <a href="mailto:Patrick@niip.me">Patrick@niip.me</a></li>
-      <li>LinkedIn: <a href="https://www.linkedin.com/" target="_blank">LinkedIn Profile</a></li>
-      <li>Twitter: <a href="https://twitter.com/Patrick__Ngunga" target="_blank">@Patrick__Ngunga</a></li>
-    </ul>
-    <p>&copy; 2024 Patrick NII. All Rights Reserved.</p>
-  </footer>
 
   <script src="../script.js"></script>
 </body>
-
 </html>
