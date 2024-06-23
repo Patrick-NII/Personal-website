@@ -161,6 +161,10 @@ h1 {
   color: var(--primary-color);
 }
 
+.icon-dark:hover {
+  color: var(--secondary-color);
+}
+
 .menu-icon-light {
   color: var(--light-color);
 }
@@ -180,7 +184,6 @@ h1 {
   flex-direction: row;
   gap: 1rem;
   z-index: 1000;
-  background-color: var(--secondary-color);
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
   -ms-border-radius: 30px;
