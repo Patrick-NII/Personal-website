@@ -53,7 +53,7 @@ body::-webkit-scrollbar {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 .hero-content h1 {
@@ -66,6 +66,14 @@ h1 {
 }
 
 .cta {
+  position: fixed;
+  bottom: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  z-index: 1000;
   background-color: #00f16f;
   text-decoration: none;
   font-size: large;
