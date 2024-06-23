@@ -372,7 +372,7 @@ body {
 
   #text {
     position: inherit;
-    top: 50px
+    top: 50px;
     font-size: 20px;
     white-space: nowrap;
   }
