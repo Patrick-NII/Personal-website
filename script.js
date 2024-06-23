@@ -1,11 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const menuIcon = document.getElementById('menu-icon');
-    const sidebar = document.getElementById('sidebar');
     const links = document.querySelectorAll('.nav-list a');
-  
-    menuIcon.addEventListener('click', () => {
-      sidebar.classList.toggle('active');
-    });
+    const heroTitle = document.querySelector('.hero h1');
   
     links.forEach(link => {
       link.addEventListener('click', (event) => {
@@ -14,7 +9,13 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById(targetId).scrollIntoView({
           behavior: 'smooth'
         });
-        sidebar.classList.remove('active'); // Hide sidebar after clicking a link
+  
+        if (targetId === 'home') {
+          heroTitle.classList.remove('fade-in');
+          setTimeout(() => {
+            heroTitle.classList.add('fade-in');
+          }, 100);
+        }
       });
     });
   });
