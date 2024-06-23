@@ -11,15 +11,9 @@
 
 <body>
   <header class="hero">
-    <nav class="navbar">
-      <div class="logo"><a href="#home">Patrick NII</a></div>
-      <ul class="nav-list">
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#blog">Blog</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+    <div class="menu-icon" id="menu-icon">
+      <i class="fas fa-bars"></i>
+    </div>
     <div class="hero-content">
       <h1>Hi, I'm Patrick NII</h1>
       <p>A Data Scientist & Engineer</p>
@@ -27,10 +21,20 @@
     </div>
   </header>
 
+  <nav class="sidebar" id="sidebar">
+    <ul class="nav-list">
+      <li><a href="#home"><i class="fas fa-home"></i></a></li>
+      <li><a href="#about"><i class="fas fa-user"></i></a></li>
+      <li><a href="#projects"><i class="fas fa-project-diagram"></i></a></li>
+      <li><a href="#blog"><i class="fas fa-blog"></i></a></li>
+      <li><a href="#contact"><i class="fas fa-envelope"></i></a></li>
+    </ul>
+  </nav>
+
   <section id="about" class="about">
     <h2>About Me</h2>
     <div class="profile">
-      <img src="..\Images\NII_sans_fond.jpeg" alt="Patrick NII">
+      <img src="../Images/NII_sans_fond.jpeg" alt="Patrick NII">
       <p>I'm passionate about Data Science, Machine Learning, and AI. Currently mastering advanced Big Data techniques.</p>
     </div>
   </section>
@@ -70,7 +74,7 @@
     <p>&copy; 2024 Patrick NII. All Rights Reserved.</p>
   </footer>
 
-  <script src="..\script.js"></script>
+  <script src="../script.js"></script>
 </body>
 
 </html>
