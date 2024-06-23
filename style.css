@@ -18,6 +18,13 @@ body {
   font-family: var(--font-family);
   background-color: var(--light-color);
   color: var(--dark-color);
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 
 .navbar {
@@ -26,6 +33,10 @@ body {
   align-items: center;
   padding: 1rem 2rem;
   background-color: var(--primary-color);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
 }
 
 .navbar .logo a {
