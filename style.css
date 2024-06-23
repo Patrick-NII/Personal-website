@@ -76,13 +76,12 @@ h1 {
   text-decoration: none;
   font-size: large;
   font-weight: bold;
-  padding: 1rem;
-  border-radius: 8px;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -ms-border-radius: 8px;
-  -o-border-radius: 8px;
-  
+  padding: .75rem;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
 }
 
 .profile img {
@@ -172,13 +171,24 @@ h1 {
 
 .sidebar {
   position: fixed;
-  top: 50%;
-  right: 1rem;
-  transform: translateY(-50%);
+  bottom: 1rem;
+  padding: .75rem;
+  border-radius: 30px;
+  right: 50%;
+  transform: translateY(50%);
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 1rem;
   z-index: 1000;
+  background-color: var(--secondary-color);
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  -webkit-transform: translateY(50%);
+  -moz-transform: translateY(50%);
+  -ms-transform: translateY(50%);
+  -o-transform: translateY(50%);
 }
 
 .container .sidebar .nav-list {
