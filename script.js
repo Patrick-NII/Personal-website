@@ -45,4 +45,17 @@ document.addEventListener('DOMContentLoaded', () => {
   updateIconColors();
 });
 
+// Ouverture du menu
+document.getElementById('menu-icon').addEventListener('click', () => {
+  document.querySelector('.menu').classList.toggle('show');
+});
 
+
+// Fermeture du menu lorsque l'on clique à l'extérieur
+document.addEventListener('click', (event) => {
+  const menu = document.querySelector('.menu');
+  const menuIcon = document.getElementById('menu-icon');
+  if (!menu.contains(event.target) && !menuIcon.contains(event.target)) {
+    menu.classList.remove('show');
+  }
+});
