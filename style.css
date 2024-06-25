@@ -530,6 +530,22 @@ h1 {
 /* .fade-in {
   animation: fadeIn 2s ease-in-out;
 } */
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.rotating-logo {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px; 
+  height: 100px;
+  animation: spin 10s linear infinite;
+}
+
 /* Responsive Design */
 @media only screen and (max-width: 400px) {
   .menu {
