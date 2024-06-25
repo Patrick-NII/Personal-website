@@ -102,8 +102,26 @@ h1 {
   background-color: var(--dark-color);
   color: var(--light-color);
 }
-
+.profile {
+  height: 600px;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 2rem;
+  background-color: var(--primary-color);
+  box-shadow: #181825 0px 0px 10px 0px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
 .profile img {
+  position: relative;
+  top: -75px;
   height: 200px;
   width: 300px;
   border-radius: 10px;
@@ -112,7 +130,9 @@ h1 {
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
+  box-shadow: #181825 0px 0px 10px 0px;
 }
+
 
 #home h1 {
   position: relative;
@@ -142,7 +162,12 @@ h1 {
   position: relative;
   z-index: 1;
 }
-
+#about h1{
+  position: relative;
+  top: 30px;
+  color: var(--primary-color);
+  z-index: 1;
+}
 #about p{
   position: relative;
   z-index: 1;
