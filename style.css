@@ -303,7 +303,7 @@ h1 {
   display: flex;
   justify-content: center;
   gap: 1rem;
-  margin-top: -2rem;
+  margin-top: 1rem;
 }
 
 .social-icons a {
@@ -420,36 +420,6 @@ h1 {
   color: var(--secondary-color);
 }
 
-.sidebar {
-  position: fixed;
-  bottom: 1rem;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  flex-direction: row;
-  gap: 1rem;
-  z-index: 1000;
-}
-
-.sidebar .nav-list {
-  list-style: none;
-  display: flex;
-  gap: 1rem;
-}
-
-.sidebar .nav-list li {
-  margin: 0;
-}
-
-.sidebar .nav-list a {
-  color: var(--light-color);
-  font-size: 1.5rem;
-  text-decoration: none;
-}
-
-.sidebar .nav-list a:hover {
-  color: var(--secondary-color);
-}
 
 /* Blur and blobs and image */
 #home .blobs {
@@ -524,7 +494,7 @@ h1 {
 
 /* Animations */
 
-@keyframes fadeIn {
+/* @keyframes fadeIn {
   from {
     opacity: 0;
     transform: translateY(20px);
@@ -533,9 +503,9 @@ h1 {
     opacity: 1;
     transform: translateY(0);
   }
-}
+}  */
 
-/* @keyframes fadeInDown {
+@keyframes fadeInDown {
   from {
     opacity: 0;
     transform: translateY(-50px);
@@ -544,7 +514,7 @@ h1 {
     opacity: 1;
     transform: translateY(0);
   }
-} */
+}
 
 @keyframes fadeInMenu {
   from {
@@ -557,9 +527,9 @@ h1 {
   }
 }
 
-.fade-in {
+/* .fade-in {
   animation: fadeIn 2s ease-in-out;
-}
+} */
 /* Responsive Design */
 @media only screen and (max-width: 400px) {
   .menu {
@@ -579,8 +549,8 @@ h1 {
 }
 
 @media only screen and (min-width: 768px) {
-  h1 {
-    font-size: 4rem;
+  #home h1 {
+    font-size: 8rem;
   }
 
   .cta {
@@ -612,8 +582,8 @@ h1 {
 }
 
 @media only screen and (min-width: 1024px) {
-  h1 {
-    font-size: 5rem;
+  #home h1 {
+    font-size: 10rem;
   }
 
   .project-item, .blog-post, .contact-form > * {
