@@ -14,8 +14,13 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   const menuIcon = document.getElementById('menu-icon');
+  const menu = document.querySelector('.menu');
   const icons = document.querySelectorAll('.nav-list a i');
   const sections = document.querySelectorAll('.v-slider-bloc');
+
+  menuIcon.addEventListener('click', () => {
+    menu.classList.toggle('show');
+  });
 
   const updateIconColors = () => {
     sections.forEach(section => {
@@ -43,19 +48,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
   window.addEventListener('scroll', updateIconColors);
   updateIconColors();
-});
 
-// Ouverture du menu
-document.getElementById('menu-icon').addEventListener('click', () => {
-  document.querySelector('.menu').classList.toggle('show');
-});
-
-
-// Fermeture du menu lorsque l'on clique à l'extérieur
-document.addEventListener('click', (event) => {
-  const menu = document.querySelector('.menu');
-  const menuIcon = document.getElementById('menu-icon');
-  if (!menu.contains(event.target) && !menuIcon.contains(event.target)) {
-    menu.classList.remove('show');
-  }
+  // Fermeture du menu lorsque l'on clique à l'extérieur
+  document.addEventListener('click', (event) => {
+    const menu = document.querySelector('.menu');
+    const menuIcon = document.getElementById('menu-icon');
+    if (!menu.contains(event.target) && !menuIcon.contains(event.target)) {
+      menu.classList.remove('show');
+    }
+  });
 });
