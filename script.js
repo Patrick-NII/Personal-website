@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const rect = section.getBoundingClientRect();
       if (rect.top <= window.innerHeight && rect.bottom >= 0) {
         const bgColor = window.getComputedStyle(section).backgroundColor;
-        if (bgColor === 'rgb(24, 24, 37)') { // #181825;
+        if (bgColor === 'rgb(67, 0, 151)') { // #430097
           menuIcon.classList.add('menu-icon-light');
           menuIcon.classList.remove('menu-icon-dark');
           icons.forEach(icon => {
