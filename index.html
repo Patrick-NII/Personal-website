@@ -24,44 +24,40 @@
         <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
       </ul>
     </div>
-    <div class="v-slider-bloc" id="home">
-      <div class="hero-content">
-        <h1 class="fade-in">Hi, I'm Patrick NII</h1>
-        <p class="fade-in">A Data Scientist & Engineer</p>
-        <a href="#projects" class="cta fade-in">See My Work</a>
-      </div>
+    <div class="v-slider-bloc hero-content" id="home">
+      <h1 class="fade-in">Hi, I'm Patrick</h1>
+      <p class="fade-in">A Data Scientist & Engineer</p>
+      <a href="#projects" class="cta fade-in">See My Work</a>
+      <div class="binary-rain"></div>
     </div>
     <div class="v-slider-bloc" id="about">
       <h1>About Me</h1>
       <div class="profile">
-        <img src="https://via.placeholder.com/150" alt="Patrick">
+        <img src="https://via.placeholder.com/150" alt="Patrick NII">
         <p>I'm passionate about Data Science, Machine Learning, and AI. Currently mastering advanced Big Data techniques.</p>
       </div>
     </div>
     <div class="v-slider-bloc" id="projects">
-      <h1></h1>
+      <h1>Projects</h1>
       <div class="project-list">
         <div class="project-item">
-          <h3>Machine Learning</h3>
+          <h3>Machine Learning Pipeline</h3>
           <img src="https://via.placeholder.com/500" alt="ML Pipeline">
-          <a href="https://github.com/Patrick-NII" target="_blank">
-            <p>Brief description of the Machine Learning pipeline project.</p>
-          </a>
+          <p>Brief description of the Machine Learning pipeline project.</p>
+          <a href="https://github.com/Patrick-NII" target="_blank">View on GitHub</a>
         </div>
         <div class="project-item">
           <h3>Data Visualization</h3>
           <img src="https://via.placeholder.com/500" alt="Data Visualization">
-          <a href="https://github.com/Patrick-NII" target="_blank">
-            <p>Brief description of the Data Visualization project.</p>
-          </a>
+          <p>Brief description of the Data Visualization project.</p>
+          <a href="https://github.com/Patrick-NII" target="_blank">View on GitHub</a>
         </div>
-        <!-- <div class="project-item">
-          <h3></h3>
+        <div class="project-item">
+          <h3>IoT and Robotics</h3>
           <img src="https://via.placeholder.com/500" alt="IoT and Robotics">
-          <a href="https://github.com/Patrick-NII" target="_blank">
-            <p>Brief description of the IoT and Robotics project.</p>
-          </a>
-        </div> -->
+          <p>Brief description of the IoT and Robotics project.</p>
+          <a href="https://github.com/Patrick-NII" target="_blank">View on GitHub</a>
+        </div>
       </div>
     </div>
     <div class="v-slider-bloc" id="blog">
@@ -78,24 +74,37 @@
           <a href="blog-post-link" target="_blank">Read More</a>
         </div>
       </div>
+      <div class="upload-database">
+        <h3>Upload Your Database</h3>
+        <input type="file" id="database-upload" name="database-upload">
+      </div>
     </div>
     <div class="v-slider-bloc" id="contact">
-      <h1>Send me a message!</h1>
-      <form action="https://formspree.io/f/mqkwzqkr" method="POST" class="contact-form">
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" required>
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" required>
-        <label for="message">Message</label>
-        <textarea id="message" name="message" required></textarea>
-        <button type="submit" class="cta">Send</button>
-      </form>
-      <div class="social-icons">
-        <a href="https://www.linkedin.com/in/patrick-ngunga-a2612325b/" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="https://twitter.com/Patrick__Ngunga" target="_blank"><i class="fab fa-twitter"></i></a>
-        <a href="https://github.com/Patrick-NII" target="_blank"><i class="fab fa-github"></i></a>
+      <div class="contact-section">
+        <h1>Send me a message!</h1>
+        <p>Got a question or proposal, or just want to say hello? Go ahead.</p>
+        <form action="https://formspree.io/f/mqkwzqkr" method="POST" class="contact-form">
+          <div class="input-group">
+            <input type="text" id="name" name="name" required>
+            <label for="name">Your Name</label>
+          </div>
+          <div class="input-group">
+            <input type="email" id="email" name="email" required>
+            <label for="email">Email Address</label>
+          </div>
+          <div class="input-group">
+            <textarea id="message" name="message" required></textarea>
+            <label for="message">Your Message</label>
+          </div>
+          <button type="submit" class="cta">SHOOT <i class="fas fa-arrow-right"></i></button>
+        </form>
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="https://twitter.com/Patrick__Ngunga" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="https://github.com/Patrick-NII" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+        <p>&copy; 2024 Patrick NII. All Rights Reserved.</p>
       </div>
-      <p>&copy; 2024 Patrick NII. All Rights Reserved.</p>
     </div>
   </div>
 
