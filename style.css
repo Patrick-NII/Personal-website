@@ -67,12 +67,14 @@ h1 {
 }
 
 .hero-content h1 {
-  animation: fadeInDown 2s ease-in-out;
+  animation: fadeInDown 1s ease-in-out;
+  -webkit-animation: fadeInDown 1s ease-in-out;
 }
 
 .hero-content p,
 .cta {
-  animation: fadeIn 2s ease-in-out;
+  animation: fadeIn 1s ease-in-out;
+  -webkit-animation: fadeIn 1s ease-in-out;
 }
 
 .cta {
@@ -102,10 +104,14 @@ h1 {
 }
 
 .profile img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
+  height: 200px;
+  width: 300px;
+  border-radius: 10px;
   margin-bottom: 1rem;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
 
 #home h1 {
@@ -135,6 +141,12 @@ h1 {
 #about{
   position: relative;
   z-index: 1;
+}
+
+#about p{
+  position: relative;
+  z-index: 1;
+
 }
 
 #projects .project-list {
@@ -370,6 +382,7 @@ h1 {
   opacity: 0;
   transform: translateY(20px);
   animation: fadeInMenu 0.5s ease forwards;
+  animation-delay: 0.3s;
 }
 
 .menu .nav-list li:nth-child(1) {
@@ -393,14 +406,19 @@ h1 {
 }
 
 .menu .nav-list a {
-  color: var(--light-color);
+  color: var(--secondary-color);
   font-size: 1.2rem;
   text-decoration: none;
   transition: color 0.3s;
 }
 
-.menu .nav-list a:hover {
+.menu .nav-list a i {
+  margin-right: 0.5rem;
   color: var(--secondary-color);
+}
+
+.menu .nav-list a:hover {
+  color: var(--light-color);
 }
 
 .icon-light {
@@ -497,7 +515,7 @@ h1 {
 
 /* Animations */
 
-/* @keyframes fadeIn {
+@keyframes fadeIn {
   from {
     opacity: 0;
     transform: translateY(20px);
@@ -506,13 +524,17 @@ h1 {
     opacity: 1;
     transform: translateY(0);
   }
-}  */
+} 
 
 @keyframes fadeInDown {
   from {
     opacity: 0;
-    transform: translateY(-50px);
-  }
+    transform: translateY(-60px);
+    -webkit-transform: translateY(-60px);
+    -moz-transform: translateY(-60px);
+    -ms-transform: translateY(-60px);
+    -o-transform: translateY(-60px);
+}
   to {
     opacity: 1;
     transform: translateY(0);
@@ -531,7 +553,8 @@ h1 {
 }
 
 /* .fade-in {
-  animation: fadeIn 2s ease-in-out;
+  animation: fadeIn 1s ease-in-out;
+  -webkit-animation: fadeIn 1s ease-in-out;
 } */
 
 /* @keyframes spin {
