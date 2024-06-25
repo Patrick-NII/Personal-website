@@ -121,7 +121,7 @@ h1 {
 }
 .profile img {
   position: relative;
-  top: -75px;
+  top: -55px;
   height: 200px;
   width: 300px;
   border-radius: 10px;
@@ -170,6 +170,7 @@ h1 {
 }
 #about p{
   position: relative;
+  top: -70px;
   z-index: 1;
 
 }
