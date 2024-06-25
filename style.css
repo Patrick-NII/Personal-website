@@ -132,6 +132,11 @@ h1 {
   -o-transform: translateX(50%);
 }
 
+#about{
+  position: relative;
+  z-index: 1;
+}
+
 #projects .project-list {
   display: flex;
   flex-wrap: wrap;
@@ -456,7 +461,7 @@ h1 {
 }
 #home .blobb {
   position: relative;
-  bottom: -260px;
+  bottom: -250px;
   right: 30%;
   width: 400px;
   height: 400px;
@@ -469,6 +474,7 @@ h1 {
   animation: move 2s infinite linear;
   filter: blur(160px);
   -webkit-filter: blur(160px);
+  z-index: 0;
 }
 
 /* Animations */
