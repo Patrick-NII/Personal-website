@@ -1,28 +1,49 @@
 document.addEventListener('DOMContentLoaded', () => {
+  // Crée un observateur d'intersection pour animer les sections lorsqu'elles apparaissent dans le viewport
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        entry.target.classList.add('fade-in');
+        entry.target.classList.add('fade-in'); // Ajoute la classe 'fade-in' pour animer l'apparition
       }
     });
   }, {
-    threshold: 0.1
+    threshold: 0.1 // Seuil d'intersection, ici 10% de l'élément doit être visible
   });
 
+  // Sélectionne toutes les sections avec la classe 'v-slider-bloc' et les observe
   document.querySelectorAll('.v-slider-bloc').forEach((section) => {
     observer.observe(section);
   });
+// // Sélectionne le conteneur de défilement et les éléments à déplacer (les sections), et ajoute un gestionnaire d'événements pour le défilement de la souris (scroll)
+// const container = document.querySelector('.container');
+// const items = document.querySelectorAll('.v-slider-bloc');
 
+// container.addEventListener('wheel', (event) => {
+//   event.preventDefault();
+//   const delta = event.deltaY;
+
+//   container.scrollBy({
+//     top: delta,
+//     behavior: 'smooth'
+//     });
+//   });
+
+  // Sélectionne l'icône du menu hamburger
   const menuIcon = document.getElementById('menu-icon');
+  // Sélectionne le menu qui sera affiché/masqué
   const menu = document.querySelector('.menu');
+  // Sélectionne toutes les icônes dans la liste de navigation
   const icons = document.querySelectorAll('.nav-list a i');
+  // Sélectionne toutes les sections à observer pour le changement de couleur de l'icône du menu
   const sections = document.querySelectorAll('.v-slider-bloc');
 
+  // Ajoute un gestionnaire d'événements pour le clic sur l'icône du menu
   menuIcon.addEventListener('click', () => {
-    menu.classList.toggle('show');
-    menuIcon.classList.toggle('open');
+    menu.classList.toggle('show'); // Affiche ou masque le menu
+    menuIcon.classList.toggle('open'); // Change l'icône du menu
   });
 
+  // Fonction pour mettre à jour les couleurs des icônes en fonction de la section visible
   const updateIconColors = () => {
     sections.forEach(section => {
       const rect = section.getBoundingClientRect();
@@ -47,16 +68,15 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   };
 
+  // Ajoute un gestionnaire d'événements pour la mise à jour des couleurs des icônes lors du défilement
   window.addEventListener('scroll', updateIconColors);
-  updateIconColors();
+  updateIconColors(); // Appelle la fonction immédiatement pour initialiser les couleurs
 
-  // Fermeture du menu lorsque l'on clique à l'extérieur
+  // Ferme le menu lorsque l'on clique à l'extérieur de celui-ci
   document.addEventListener('click', (event) => {
-    const menu = document.querySelector('.menu');
-    const menuIcon = document.getElementById('menu-icon');
     if (!menu.contains(event.target) && !menuIcon.contains(event.target)) {
-      menu.classList.remove('show');
-      menuIcon.classList.remove('open');
+      menu.classList.remove('show'); // Masque le menu
+      menuIcon.classList.remove('open'); // Réinitialise l'icône du menu
     }
   });
 });
