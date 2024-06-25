@@ -15,48 +15,6 @@ document.addEventListener('DOMContentLoaded', () => {
     observer.observe(section);
   });
 
-  // Sélectionne le conteneur principal pour la détection de la molette
-  const container = document.querySelector('.container');
-  let scrollTimeout;
-
-  container.addEventListener('wheel', (event) => {
-    event.preventDefault();
-    const delta = event.deltaY;
-
-    // Cancel any previous scroll animations
-    if (scrollTimeout) {
-      clearTimeout(scrollTimeout);
-    }
-
-    // Smooth scrolling using requestAnimationFrame
-    const start = container.scrollTop;
-    const end = start + delta;
-    const duration = 600; // Adjust duration for smoothness
-    let startTime = null;
-
-    function smoothScroll(timestamp) {
-      if (!startTime) startTime = timestamp;
-      const timeElapsed = timestamp - startTime;
-      const progress = Math.min(timeElapsed / duration, 1);
-      container.scrollTop = start + (end - start) * easeInOutQuad(progress);
-
-      if (timeElapsed < duration) {
-        requestAnimationFrame(smoothScroll);
-      }
-    }
-
-    requestAnimationFrame(smoothScroll);
-
-    // Allow scroll snapping after the animation ends
-    scrollTimeout = setTimeout(() => {
-      container.style.scrollSnapType = 'y mandatory';
-    }, duration + 100);
-  });
-
-  // Easing function for smooth scrolling
-  function easeInOutQuad(t) {
-    return t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
-  }
 
   // Sélectionne l'icône du menu hamburger
   const menuIcon = document.getElementById('menu-icon');
