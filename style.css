@@ -32,6 +32,7 @@ body::-webkit-scrollbar {
   overflow-y: scroll;
   overflow-x: hidden;
   scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
 }
 
 .v-slider-bloc {
@@ -40,7 +41,7 @@ body::-webkit-scrollbar {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  scroll-snap-align: center;
+  scroll-snap-align: start;
   padding: 2rem;
 }
 
@@ -76,13 +77,23 @@ h1 {
 
 .cta {
   gap: 1rem;
-  margin-top: 2rem;
+  margin-top: auto;
+  margin-bottom: 3rem;
   padding: 0.75rem 2rem;
   background-color: var(--secondary-color);
-  color: var(--dark-color);
+  color: var(--primary-color);
   text-decoration: none;
   border-radius: 5px;
+  font-weight: extra-bold;
   transition: background-color 0.3s;
+  
+}
+
+.cte {
+  position: relative;
+  bottom: -200px;
+  left: 15%;
+  transform: translateX(-50%);
 }
 
 .cta:hover {
@@ -187,7 +198,7 @@ h1 {
 
 .v-slider-bloc h1 {
   font-size: 2rem;
-  margin-bottom: 2.5rem;
+  margin-bottom: .5rem;
   text-align: center;
 }
 
@@ -216,7 +227,7 @@ h1 {
   width: 100%;
   padding: 0.75rem;
   border: none;
-  border-bottom: .5px solid var(--light-color);
+  border-bottom: .2px solid var(--light-color);
   outline: none;
   background: transparent;
   color: var(--light-color);
@@ -254,7 +265,7 @@ h1 {
   display: flex;
   justify-content: center;
   gap: 1rem;
-  margin-top: 3rem;
+  margin-top: 1rem;
 }
 
 .social-icons a {
@@ -403,6 +414,11 @@ h1 {
 }
 
 /* Animations */
+@keyframes scroll {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-100%); }
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
