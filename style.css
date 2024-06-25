@@ -467,6 +467,20 @@ h1 {
   .contact-form input, .contact-form textarea {
     flex: 1 1 100%;
   }
+  .menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 10%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.358);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    transition: right 0.5s ease, opacity 0.5s ease;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -484,5 +498,19 @@ h1 {
 
   .menu {
     width: 50%;
+  }
+  .menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 10%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.358);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    transition: right 0.5s ease, opacity 0.5s ease;
   }
 }
