@@ -442,7 +442,7 @@ h1 {
   color: var(--secondary-color);
 }
 
-/* Blur and blobs */
+/* Blur and blobs and image */
 #home .blobs {
   position: relative;
   top: -260px;
@@ -476,6 +476,8 @@ h1 {
   -webkit-filter: blur(160px);
   z-index: 0;
 }
+
+
 
 /* Animations */
 
