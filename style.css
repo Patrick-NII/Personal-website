@@ -113,7 +113,7 @@ h1 {
   border-radius: 5px;
   width: 100%;
   max-width: 450px;
-  max-height: 300px;
+  max-height: 00px;
   text-align: left;
   color: var(--dark-color);
 }
