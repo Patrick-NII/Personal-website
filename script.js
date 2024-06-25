@@ -20,6 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   menuIcon.addEventListener('click', () => {
     menu.classList.toggle('show');
+    menuIcon.classList.toggle('open');
   });
 
   const updateIconColors = () => {
@@ -27,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const rect = section.getBoundingClientRect();
       if (rect.top <= window.innerHeight && rect.bottom >= 0) {
         const bgColor = window.getComputedStyle(section).backgroundColor;
-        if (bgColor === 'rgb(67, 0, 151)') { // #430097
+        if (bgColor === 'rgb(24, 24, 37)') { // #181825;
           menuIcon.classList.add('menu-icon-light');
           menuIcon.classList.remove('menu-icon-dark');
           icons.forEach(icon => {
@@ -55,6 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const menuIcon = document.getElementById('menu-icon');
     if (!menu.contains(event.target) && !menuIcon.contains(event.target)) {
       menu.classList.remove('show');
+      menuIcon.classList.remove('open');
     }
   });
 });
