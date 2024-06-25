@@ -99,8 +99,9 @@ h1 {
 
 .project-list {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   gap: 1rem;
+  justify-content: center;
 }
 
 .project-item {
@@ -108,7 +109,7 @@ h1 {
   padding: 1rem;
   border-radius: 5px;
   width: 100%;
-  max-width: 500px;
+  max-width: 300px;
   text-align: left;
 }
 
@@ -137,8 +138,9 @@ h1 {
 
 .blog-posts {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   gap: 1rem;
+  justify-content: center;
 }
 
 .blog-post {
@@ -146,7 +148,7 @@ h1 {
   padding: 1rem;
   border-radius: 5px;
   width: 100%;
-  max-width: 500px;
+  max-width: 300px;
   text-align: left;
 }
 
@@ -173,6 +175,10 @@ h1 {
   gap: 1rem;
   width: 100%;
   max-width: 500px;
+  background: var(--light-color);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 .contact-form label {
@@ -182,9 +188,14 @@ h1 {
 .contact-form input,
 .contact-form textarea {
   width: 100%;
-  padding: 0.5rem;
+  padding: 0.75rem;
   border: 1px solid var(--dark-color);
   border-radius: 5px;
+  resize: none; /* Limiting textarea resize */
+}
+
+.contact-form textarea {
+  height: 150px;
 }
 
 .contact-form button {
@@ -210,7 +221,7 @@ h1 {
 }
 
 .social-icons a {
-  color: var(--light-color);
+  color: var(--dark-color);
   font-size: 2rem;
   transition: color 0.3s;
 }
@@ -230,17 +241,22 @@ h1 {
   right: 1rem;
   font-size: 2rem;
   cursor: pointer;
-  color: var(--light-color);
+  color: var(--dark-color);
   z-index: 1000;
+  transition: transform 0.3s ease;
+}
+
+.menu-icon.open {
+  transform: rotate(90deg);
 }
 
 .menu {
   position: fixed;
   top: 0;
   right: -100%;
-  width: 75%;
+  width: 35%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(0, 0, 0, 0.412);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -256,7 +272,7 @@ h1 {
 
 .menu .nav-list {
   list-style: none;
-  text-align: center;
+  text-align: start;
   padding: 0;
 }
 
@@ -289,7 +305,7 @@ h1 {
 
 .menu .nav-list a {
   color: var(--light-color);
-  font-size: 2rem;
+  font-size: 1.2rem;
   text-decoration: none;
   transition: color 0.3s;
 }
