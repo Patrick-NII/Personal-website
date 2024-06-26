@@ -562,19 +562,19 @@ social-icons a:hover {
   }
   #about h1 {
     position: relative;
-    top: -120px;
-    font-size: 3rem;
+    top: -140px;
+    font-size: 2rem;
     color: var(--primary-color);
     z-index: 1;
   }
   
   #about img {
     position: absolute;
-    top: 45%;
+    top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: 250px;  
-    width: 400px;
+    height: 200px;  
+    width: 350px;
   }
 }
 
@@ -587,7 +587,7 @@ social-icons a:hover {
     width: auto;
   }
   
-  .project-list, .blog-posts, .contact-form {
+  .project-list, .contact-form {
     flex-direction: column;
     flex-wrap: nowrap;
     gap: 1rem;
@@ -641,7 +641,7 @@ social-icons a:hover {
 
   #about h1 {
     position: relative;
-    top: -160px;
+    top: -220px;
     font-size: 4.5rem;
     color: var(--primary-color);
     z-index: 1;
@@ -649,7 +649,7 @@ social-icons a:hover {
   
   #about img {
     position: absolute;
-    top: 45%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     height: 300px;  
@@ -676,7 +676,7 @@ social-icons a:hover {
   }
   #about h1 {
     position: relative;
-    top: -220px;
+    top: -160px;
     font-size: 5rem;
     color: var(--primary-color);
     z-index: 1;
@@ -684,10 +684,10 @@ social-icons a:hover {
 
   #about img {
     position: absolute;
-    top: 60%;
-    left: 35%;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
-    height: 400px;  
-    width: 700px;
+    height: 300px;  
+    width: 550px;
   }
 }
