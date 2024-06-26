@@ -94,12 +94,18 @@
     <div class="v-slider-bloc" id="contact">
       <h1>Send me a message!</h1>
       <form action="https://formspree.io/f/mqkwzqkr" method="POST" class="contact-form">
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" required>
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" required>
-        <label for="message">Message</label>
-        <textarea id="message" name="message" required></textarea>
+        <div class="input-group">
+          <input type="text" id="name" name="name" required>
+          <label for="name">Name</label>
+        </div>
+        <div class="input-group">
+          <input type="email" id="email" name="email" required>
+          <label for="email">Email</label>
+        </div>
+        <div class="input-group">
+          <textarea id="message" name="message" required></textarea>
+          <label for="message">Message</label>
+        </div>
         <button type="submit" class="cta">Send</button>
       </form>
       <div class="social-icons">
