@@ -52,7 +52,10 @@ body::-webkit-scrollbar {
 }
 
 .v-slider-bloc:nth-child(odd) {
-  background-color: var(--primary-color);
+  background: rgb(0,241,111);
+  background: linear-gradient(45deg, 
+  rgba(24,24,37,1) 10%,
+  rgba(67,0,151,1) 90%); 
   color: var(--light-color);
 }
 
@@ -64,6 +67,11 @@ body::-webkit-scrollbar {
 h1 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
+}
+
+.hero-content{
+  position: relative;
+  top: 300px;
 }
 
 .hero-content h1 {
@@ -170,6 +178,11 @@ h1 {
   z-index: 1;
 }
 
+#projects {
+  position: relative;
+  z-index: 1;
+}
+
 #projects .project-list {
   display: flex;
   flex-wrap: wrap;
@@ -182,6 +195,11 @@ h1 {
 #name, #email, #message {
   background-color: var(--light-color);
   border-radius: 5px;
+}
+
+.project-list{
+  position: relative;
+  top: 300px;
 }
 
 .project-item {
@@ -216,6 +234,11 @@ h1 {
 
 .project-item a:hover {
   text-decoration: underline;
+}
+
+#blog {
+  position: relative;
+  z-index: 1;
 }
 
 .blog-posts {
@@ -482,7 +505,7 @@ social-icons a:hover {
 }
 
 /* Blur and blobs and image */
-#home .blobs {
+/* #home .blobs {
   position: relative;
   top: 30px;
   left: 70%;
@@ -492,10 +515,11 @@ social-icons a:hover {
   border-radius: 50%;
   animation: move 2s infinite linear;
   filter: blur(180px);
-}
+}*/
 
-#home .blobb {
+#home .hero-content .blobb {
   position: relative;
+  top: 300px;
   bottom: 30px;
   right: 70%;
   width: 800px;
@@ -505,7 +529,21 @@ social-icons a:hover {
   animation: move 2s infinite linear;
   filter: blur(250px);
   z-index: 0;
-}
+} 
+#projects .blobb {
+  position: relative;
+  top: 700px;
+  bottom: 30px;
+  right: 500px;
+  width: 800px;
+  height: 800px;
+  background-color: var(--secondary-color);
+  border-radius: 50%;
+  animation: move 2s infinite linear;
+  filter: blur(250px);
+  z-index: -1;
+} 
+
 
 /* Logo Rotation */
 @keyframes spin {
