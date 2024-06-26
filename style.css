@@ -263,7 +263,7 @@ h1 {
 
 .v-slider-bloc h1 {
   font-size: 2rem;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
   text-align: center;
 }
 
@@ -282,13 +282,13 @@ h1 {
   max-width: 700px;
 }
 
-.v-slider-bloc label {
-  font-weight: bold;
-  color: var(--light-color);
+.input-group {
+  position: relative;
+  margin-bottom: 1rem;
 }
 
-.v-slider-bloc input,
-.v-slider-bloc textarea {
+.input-group input,
+.input-group textarea {
   width: 100%;
   padding: 0.75rem;
   border: none;
@@ -299,9 +299,28 @@ h1 {
   font-size: 1rem;
 }
 
-.v-slider-bloc input:focus,
-.v-slider-bloc textarea:focus {
-  border-bottom-color: var(--light-color);
+.input-group label {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: var(--dark-color);
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+
+.input-group input:focus + label,
+.input-group textarea:focus + label,
+.input-group input:not(:placeholder-shown) + label,
+.input-group textarea:not(:placeholder-shown) + label {
+  top: -20px;
+  left: 0;
+  color: var(--secondary-color);
+  font-size: 0.75rem;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+  border-bottom-color: var(--secondary-color);
 }
 
 .contact-form textarea {
@@ -325,6 +344,7 @@ h1 {
   background-color: var(--light-color);
   color: var(--primary-color);
 }
+
 
 .social-icons {
   display: flex;
