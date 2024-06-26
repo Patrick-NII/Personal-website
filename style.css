@@ -682,7 +682,16 @@ social-icons a:hover {
     transform: translate(-50%, -50%);
     padding: 10rem;
     
-  }  
+  }
+  .fa-sharp {
+    position: absolute;
+    top: 60%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    font-size: 8rem;
+    color: var(--secondary-color);    
+  }
+
   .roll img {
     position: absolute;
     top: 60%;
