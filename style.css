@@ -110,7 +110,7 @@ h1 {
   transform: translateX(-50%);
 }
 
-.profile {
+.roll {
   position: relative;
   top: 55%;
   transform: translateY(-50%);
@@ -128,7 +128,7 @@ h1 {
   border-radius: 8px;
 }
 
-.profile img {
+.roll img {
   position: absolute;
   top: 12%;
   transform: translateY(-50%);
