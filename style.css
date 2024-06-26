@@ -368,6 +368,10 @@ social-icons a:hover {
 
 .menu-icon.open {
   transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
 }
 
 .menu {
@@ -527,7 +531,7 @@ social-icons a:hover {
 /* Responsive Design */
 @media only screen and (max-width: 400px) {
   .menu {
-    width: 40%;
+    width: 15%;
   }
 }
 
@@ -560,7 +564,7 @@ social-icons a:hover {
   }
 
   .menu {
-    width: 25%;
+    width: 10%;
   }
 }
 
@@ -578,6 +582,6 @@ social-icons a:hover {
   }
 
   .menu {
-    width: 15%;
+    width: 5%;
   }
 }
