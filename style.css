@@ -121,7 +121,6 @@ h1 {
 }
 .profile img {
   position: relative;
-  top: -55px;
   height: 200px;
   width: 300px;
   border-radius: 10px;
@@ -170,7 +169,8 @@ h1 {
 }
 #about p{
   position: relative;
-  top: -70px;
+  top: -40px;
+  padding: 1rem;
   z-index: 1;
 
 }
@@ -578,24 +578,7 @@ h1 {
   }
 }
 
-/* .fade-in {
-  animation: fadeIn 1s ease-in-out;
-  -webkit-animation: fadeIn 1s ease-in-out;
-} */
 
-/* @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-} */
-
-/* .rotating-logo {
-  position: relative;
-  bottom: 980px;
-  right: 200px;
-  width: 80px; 
-  height: 80px;
-  animation: spin 10s linear infinite;
-} */
 
 /* Responsive Design */
 @media only screen and (max-width: 400px) {
