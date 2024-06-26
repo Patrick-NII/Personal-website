@@ -379,7 +379,6 @@ social-icons a:hover {
   top: 70%;
   right: -100%;
   transform: translate(0, -50%);
-  width: 15%;
   height: 40%;
   background: var(--primary-color);
   display: flex;
@@ -534,9 +533,10 @@ social-icons a:hover {
     width: 15%;
   }
 }
-@media only screen and (max-width: 767px) {
+
+@media only screen and (min-width: 401px) and (max-width: 767px) {
   .menu {
-    width: 10%;
+    width: 15%;
   }
 }
 
