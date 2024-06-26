@@ -282,9 +282,7 @@ h1 {
   position: relative;
   z-index: 1;
 }
-#contact h1 {
-  
-}
+
 .contact-section {
   display: flex;
   flex-direction: column;
@@ -373,6 +371,9 @@ h1 {
   transition: background-color 0.3s, color 0.3s;
   font-weight: bold;
   font-size: 1rem;
+  border: none;
+  width: 20%;
+  margin-left: 40%;
 }
 
 .contact-form button:hover {
@@ -631,17 +632,27 @@ social-icons a:hover {
   }
 
   .project-list, .blog-posts, .contact-form {
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 1rem;
+    width: 50%;
   }
 
   .project-item, .blog-post, .contact-form > * {
     flex: 1 1 calc(50% - 1rem);
     margin: 0.5rem;
   }
-
-  .contact-form input, .contact-form textarea {
-    flex: 1 1 100%;
+  .v-slider-bloc h1 {
+    font-size: 3rem;
+  }
+  .v-slider-bloc p {
+    position: relative;
+    top: 80px;
+    font-size: 1rem;
+  }
+  .v-slider-bloc .social-icons {
+    position: relative;
+    top: 80px;
   }
 
   .menu {
