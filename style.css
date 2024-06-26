@@ -344,7 +344,7 @@ social-icons a:hover {
 
 .menu-icon {
   position: fixed;
-  top: 1rem;
+  top: 2rem;
   right: 1rem;
   font-size: 2rem;
   cursor: pointer;
@@ -357,16 +357,26 @@ social-icons a:hover {
   color: var(--secondary-color);
 }
 
+.container #plus {
+  color: var(--primary-color);
+  transform: rotate(30deg);
+  -webkit-transform: rotate(30deg);
+  -moz-transform: rotate(30deg);
+  -ms-transform: rotate(30deg);
+  -o-transform: rotate(30deg);
+}
+
 .menu-icon.open {
   transform: rotate(90deg);
 }
 
 .menu {
   position: fixed;
-  top: 0;
+  top: 70%;
   right: -100%;
-  width: 35%;
-  height: 100%;
+  transform: translate(0, -50%);
+  width: 15%;
+  height: 40%;
   background: var(--primary-color);
   display: flex;
   flex-direction: column;
@@ -374,6 +384,15 @@ social-icons a:hover {
   align-items: center;
   z-index: 999;
   transition: right 0.5s ease, opacity 0.5s ease;
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  border-radius: 30px 0 0 30px;
+  -webkit-border-radius: 30px 0 0 30px;
+  -moz-border-radius: 30px 0 0 30px;
+  -ms-border-radius: 30px 0 0 30px;
+  -o-border-radius: 30px 0 0 30px;
 }
 
 .menu.show {
@@ -402,6 +421,9 @@ social-icons a:hover {
 }
 
 .menu .nav-list a i {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
   margin-right: 0.5rem;
   color: var(--secondary-color);
 }
@@ -423,7 +445,7 @@ social-icons a:hover {
 }
 
 .menu-icon-light {
-  color: var(--light-color);
+  color: var(--primary-color);
 }
 
 .menu-icon-dark {
