@@ -31,34 +31,34 @@ document.addEventListener('DOMContentLoaded', () => {
     menuIcon.classList.toggle('open'); // Change l'icône du menu
   });
 
-  // Fonction pour mettre à jour les couleurs des icônes en fonction de la section visible
-  const updateIconColors = () => {
-    sections.forEach(section => {
-      const rect = section.getBoundingClientRect();
-      if (rect.top <= window.innerHeight && rect.bottom >= 0) {
-        const bgColor = window.getComputedStyle(section).backgroundColor;
-        if (bgColor === 'rgb(67, 0, 151)') { // #430097
-          menuIcon.classList.add('menu-icon-light');
-          menuIcon.classList.remove('menu-icon-dark');
-          icons.forEach(icon => {
-            icon.classList.add('icon-light');
-            icon.classList.remove('icon-dark');
-          });
-        } else if (bgColor === 'rgb(240, 240, 240)') { // #f0f0f0
-          menuIcon.classList.add('menu-icon-dark');
-          menuIcon.classList.remove('menu-icon-light');
-          icons.forEach(icon => {
-            icon.classList.add('icon-dark');
-            icon.classList.remove('icon-light');
-          });
-        }
-      }
-    });
-  };
+  // // Fonction pour mettre à jour les couleurs des icônes en fonction de la section visible
+  // const updateIconColors = () => {
+  //   sections.forEach(section => {
+  //     const rect = section.getBoundingClientRect();
+  //     if (rect.top <= window.innerHeight && rect.bottom >= 0) {
+  //       const bgColor = window.getComputedStyle(section).backgroundColor;
+  //       if (bgColor === 'rgb(67, 0, 151)') { // #430097
+  //         menuIcon.classList.add('menu-icon-light');
+  //         menuIcon.classList.remove('menu-icon-dark');
+  //         icons.forEach(icon => {
+  //           icon.classList.add('icon-light');
+  //           icon.classList.remove('icon-dark');
+  //         });
+  //       } else if (bgColor === 'rgb(240, 240, 240)') { // #f0f0f0
+  //         menuIcon.classList.add('menu-icon-dark');
+  //         menuIcon.classList.remove('menu-icon-light');
+  //         icons.forEach(icon => {
+  //           icon.classList.add('icon-dark');
+  //           icon.classList.remove('icon-light');
+  //         });
+  //       }
+  //     }
+  //   });
+  // };
 
-  // Ajoute un gestionnaire d'événements pour la mise à jour des couleurs des icônes lors du défilement
-  window.addEventListener('scroll', updateIconColors);
-  updateIconColors(); // Appelle la fonction immédiatement pour initialiser les couleurs
+  // // Ajoute un gestionnaire d'événements pour la mise à jour des couleurs des icônes lors du défilement
+  // window.addEventListener('scroll', updateIconColors);
+  // updateIconColors(); // Appelle la fonction immédiatement pour initialiser les couleurs
 
   // Ferme le menu lorsque l'on clique à l'extérieur de celui-ci
   document.addEventListener('click', (event) => {
