@@ -122,18 +122,6 @@ h1 {
   border-radius: 8px;
 }
 
-#about img {
-  position: absolute;
-  top: 35%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  height: 200px;
-  width: 320px;
-  border-radius: 10px;
-  margin-bottom: 1rem;
-  box-shadow: 0px 0px 10px 0px var(--dark-color);
-  z-index: 20;
-}
 
 #home h1 {
   position: relative;
@@ -160,9 +148,21 @@ h1 {
   z-index: 1;
 }
 
+#about img {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 200px;
+  width: 320px;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  box-shadow: 0px 0px 10px 0px var(--dark-color);
+  z-index: 20;
+}
 #about h1 {
   position: relative;
-  top: -40px;
+  top: -45px;
   color: var(--primary-color);
   z-index: 1;
 }
