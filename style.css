@@ -534,6 +534,11 @@ social-icons a:hover {
     width: 15%;
   }
 }
+@media only screen and (max-width: 767px) {
+  .menu {
+    width: 10%;
+  }
+}
 
 @media only screen and (min-width: 768px) {
   #home h1 {
@@ -564,7 +569,7 @@ social-icons a:hover {
   }
 
   .menu {
-    width: 10%;
+    width: 8%;
   }
 }
 
