@@ -259,7 +259,7 @@ h1 {
 
 .v-slider-bloc p {
   font-size: 1rem;
-  margin-top: 1.5rem;
+  margin-top: 0rem;
   text-align: center;
   color: var(--light-color);
 }
@@ -363,10 +363,7 @@ social-icons a:hover {
   color: var(--secondary-color);
 }
 
-.footer p {
-  text-align: center;
-  margin-top: 1rem;
-}
+/* Menu */
 
 .menu-icon {
   position: fixed;
@@ -661,6 +658,44 @@ social-icons a:hover {
     height: 300px;  
     width: 580px;
   }
+  /* Blur and blobs and image */
+.v-slider-bloc:nth-child(odd) .blobb {
+  position: relative;
+  top: 300px;
+  bottom: 30px;
+  right: 70%;
+  width: 800px;
+  height: 800px;
+  background-color: var(--secondary-color);
+  border-radius: 50%;
+  animation: move 2s infinite linear;
+  filter: blur(250px);
+  -webkit-filter: blur(250px);
+}
+
+#home .blobb {
+  top: 300px; /* Adjust top position specific to #home section */
+}
+
+#projects .blobb {
+  top: 500px; /* Adjust top position specific to #projects section */
+  right: 750px; /* Adjust right position specific to #projects section */
+  z-index: -1; /* Ensure it stays behind other elements */
+}
+
+#contact .blobb {
+  position: absolute;
+  top: 500px;
+  left: -450px;
+  width: 800px;
+  height: 270px;
+  background-color: var(--secondary-color);
+  border-radius: 50%;
+  animation: move 2s infinite linear;
+  filter: blur(150px);
+  z-index: -1;
+  -webkit-filter: blur(150px);
+}
  
 }
 
