@@ -41,7 +41,7 @@ body::-webkit-scrollbar {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  scroll-snap-align: center;
+  scroll-snap-align: start;
   padding: 2rem;
 }
 
@@ -403,7 +403,7 @@ social-icons a:hover {
   right: -100%;
   transform: translate(0, -50%);
   height: 40%;
-  background: var(--primary-color);
+  /* background: var(--primary-color); */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -444,6 +444,12 @@ social-icons a:hover {
   font-size: 1.2rem;
   text-decoration: none;
   transition: color 0.3s;
+  background: none;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
 }
 
 .menu .nav-list a i {
@@ -452,6 +458,13 @@ social-icons a:hover {
   transform: translateX(-50%);
   margin-right: 0.5rem;
   color: var(--secondary-color);
+  background: none;
+  box-shadow:  -10px 10px 10px #18182526;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
 }
 
 .menu .nav-list a:hover {
