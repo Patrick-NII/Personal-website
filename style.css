@@ -68,7 +68,7 @@ h1 {
   margin-bottom: 1rem;
 }
 
-.hero-content{
+.hero-content {
   position: relative;
   top: 300px;
 }
@@ -120,7 +120,6 @@ h1 {
   box-shadow: -2px 10px 10px 2px var(--primary-color);
   border-radius: 8px;
 }
-
 
 #home h1 {
   position: relative;
@@ -178,12 +177,9 @@ h1 {
   z-index: 1;
 }
 
-
-
 #name, #email, #message {
   background-color: var(--light-color);
 }
-
 
 #blog {
   position: relative;
@@ -286,7 +282,6 @@ h1 {
   color: var(--dark-color); 
 }
 
-
 .input-group {
   position: relative;
   margin-bottom: 1rem;
@@ -350,7 +345,6 @@ h1 {
   background-color: var(--light-color);
   color: var(--primary-color);
 }
-
 
 .social-icons {
   display: flex;
@@ -488,18 +482,6 @@ social-icons a:hover {
 }
 
 /* Blur and blobs and image */
-/* #home .blobs {
-  position: relative;
-  top: 30px;
-  left: 70%;
-  width: 800px;
-  height: 800px;
-  background-color: var(--dark-color);
-  border-radius: 50%;
-  animation: move 2s infinite linear;
-  filter: blur(180px);
-}*/
-
 .v-slider-bloc:nth-child(odd) .blobb {
   position: relative;
   top: 300px;
@@ -520,28 +502,24 @@ social-icons a:hover {
 
 #projects .blobb {
   top: 500px; /* Adjust top position specific to #projects section */
-  right: 750px; /* Adjust right position specific to #projects section */
+  right: 500px; /* Adjust right position specific to #projects section */
   z-index: -1; /* Ensure it stays behind other elements */
 }
 
 #contact .blobb {
-  top: -50px; /* Adjust top position specific to #contact section */
-  left: 0px; /* Adjust left position specific to #contact section */
-  z-index: 0; /* Ensure it stays behind other elements */
+  position: absolute;
+  top: 500px;
+  left: -150px;
+  width: 400px;
+  height: 150px;
+  background-color: var(--secondary-color);
+  border-radius: 50%;
+  animation: move 2s infinite linear;
+  filter: blur(150px);
+  z-index: -1;
+  -webkit-filter: blur(150px);
 }
 
-
-/* Logo Rotation */
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-
-.rotating-logo {
-  width: 100px; /* Adjust size as needed */
-  height: 100px; /* Adjust size as needed */
-  animation: spin 10s linear infinite;
-}
 
 /* Animations */
 @keyframes fadeIn {
